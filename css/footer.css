@@ -1,0 +1,46 @@
+.footer{
+    width: 100%;
+    /*height: auto;*/
+    height: 477px;
+    padding-bottom: 56px;
+    /*background: #ffffff;*/
+    overflow: hidden;
+    background: darkcyan;
+
+}
+.footer .top{
+    width: 100%;
+    height: auto;
+    background: #f0f0f0;
+    overflow: hidden;
+}
+.footer .middle{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    margin-top: 50px;
+    overflow: hidden;
+}
+.footer .bottom{
+    width: 976px;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    padding-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
