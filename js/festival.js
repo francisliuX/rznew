@@ -7,16 +7,16 @@ $(()=>{
         // console.log($tar)
         if($tar.is("a")) {
             var index = $tar.parent().index();
-            console.log(index);
+            // console.log(index);
             $(".move_box").css("left", LIWIDTH * index);
             if(index==""){
                 fun("data/getfestivalA.php");
             }else if(index==1){
                 fun("data/getfestivalB.php");
             }else if(index==2){
-                fun("data/getfestivalA.php");
+                fun("data/getfestivalC.php");
             }else if(index==3){
-                fun("data/getfestivalB.php");
+                fun("data/getfestivalD.php");
             }
         }
     });
