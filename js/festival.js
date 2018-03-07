@@ -1,22 +1,5 @@
 $(()=>{
-
-    //************************进入hover出下拉******************************
-    // $(".image_tit_txt").hover(
-    //     function(){
-    //         $(this).parent().children("div:last-child").css({
-    //             display:"block",
-    //             "z-index":"999"
-    //         })
-    //
-    //     },
-        // function(){
-        //     $(this).parent().parent().children("div:last-child").css({
-        //         display:"none"
-        //     })
-        //
-        // }
-    // )
-    //**********************进入内容栏来回切换*****************************
+ //**********************进入内容栏来回切换*****************************
     var LIWIDTH=248;
     $(".main_image_tit").mouseover(e=>{
         e.preventDefault();
