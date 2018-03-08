@@ -1,4 +1,6 @@
-
+.main_inner{
+    background: #972421;
+}
 .main_image_pic{
     margin-top: -4px;
 }
@@ -8,27 +10,27 @@
     background: #972421;
 }
 .main_image .main_image_pic0{
-    position: relative;
-    background: url(../img/festival/inner/inner1.jpg) center 0 no-repeat;
-
+    /*position: relative;*/
+    margin: 0 auto;
+    background: url(../img/festival/inner/inner1.jpg)no-repeat center;
+    -webkit-background-size: 1920px 1000px;
+    background-size: 1920px 1000px;
     height: 755px;
 }
 .main_image .main_image_pic img{
     width: 100%;
     margin-top: -4px;
 }
-.main_image1 .main_image_pic{
+.main_inner .main_image .main_image_pic{
     /*position: relative;*/
     margin: 0 auto;
-    width: 990px;
+    width: 1919px;
     /*height: 1000px;*/
     height: 100%;
 
     background: #D62708;
 }
-.main_image1 .main_image_pic img{
-    width: 100%;
-}
+
 .main_image2{
     width: 100%;
     height: 4000px;
@@ -78,11 +80,7 @@
 
 }
 /***************内容栏***********************/
-/*.main_image2 .main_image_pic .main_image_inn{*/
-    /*width: 990px;*/
-    /*height: 100%;*/
-    /*background: #f2aa0e;*/
-/*}*/
+
 .main_image2 .main_image_pic .inner_list{
     position: relative;
     margin-right: -10px;
@@ -169,12 +167,20 @@
 }
 .main_image2 .main_image_pic1{
     position: relative;
-    top: -1212px;
-    height: 1445px;
-    /*background: #972421;*/
-    background: url(../img/festival/new1.png) center 0 no-repeat;
-}
+    top: -1189px;
+    height: 220px;
+    background: url(../img/festival/new2.png) center 0 no-repeat;
+    background-size: 1166px 280px;
 
+}
+.main_image2 .main_image_pic1 .main_image_list{
+    margin: 0 auto;
+    position: relative;
+    top: 99px;
+    width: 1000px;
+    height: 500px;
+    border: 1px solid #000000;
+}
 
 
 
