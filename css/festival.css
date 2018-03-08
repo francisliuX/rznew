@@ -33,17 +33,10 @@
 
 .main_image2{
     width: 100%;
-    height: 4000px;
-    /*background: #972421;*/
-    /*background: url(../img/festival/new.jpg) no-repeat;*/
+    height: 2000px;
+
 }
 
-/*.main_image2 .main_image_pic{*/
-    /*width: 100%;*/
-    /*height: 4000px;*/
-    /*!*background: #972421;*!*/
-    /*background: url(../img/festival/new.jpg) no-repeat;*/
-/*}*/
 .main_image2 .main_image_pic .main_image_inner{
     position: relative;
     top: 66px;
@@ -161,33 +154,68 @@
 }
 
 /*********************main_image*******************/
-.main_image2 .main_image2_box{
+.main_image2{
     background: url(../img/festival/new.jpg) center 0 no-repeat;
-    height: 2000px;
+    height: 3891px;
 }
 .main_image2 .main_image_pic1{
     position: relative;
-    top: -1189px;
+    /*top: -3066px;*/
     height: 220px;
-    background: url(../img/festival/new2.png) center 0 no-repeat;
-    background-size: 1166px 280px;
+    background: url(../img/festival/new2-1.png) center 0 no-repeat;
+    background-size: 1451px 100px;
 
 }
 .main_image2 .main_image_pic1 .main_image_list{
-    margin: 0 auto;
+    margin: 125px auto;
     position: relative;
     top: 99px;
     width: 1000px;
-    height: 500px;
-    border: 1px solid #000000;
+    height: 600px;
+    /*border: 1px solid #000000;*/
 }
+/*******************festival————box*****************************/
+.main_image_pic1 .main_image_list .image_list_box{
+    position: relative;
+    margin: 0px auto;
+    width: 980px;
+    height:190px ;
+    /*border: 1px solid #ffffff;*/
+}
+.main_image_pic1 .main_list_li{
+    float: left;
+}
+.main_image_pic1 .main_list_box1 .main_list_li{
+    margin: 5px 4px;
+    width: 480px;
+    height:180px ;
+    /*border: 1px solid #ffffff;*/
+}
+.main_image_pic1 .main_list_box2 .main_list_li{
+    margin: 4px 4px;
+    width: 236px;
+    height:180px ;
+    /*border: 1px solid #ffffff;*/
+}
+.main_image_pic1 .main_list_box3 .main_list_li{
+    margin: 3px 4px;
+    width: 480px;
+    height:180px ;
+    /*border: 1px solid #ffffff;*/
+}
+/****************************main_image3*************************************/
+.main_image3{
+    width: 100%;
+    height: 2398px;
+}
+.main_image3 .main_image3_inner{
+    position: relative;
+    top: 130px;
+    width: 1086px;
+    /*height: 2920px;*/
+    margin: -525px auto;
 
-
-
-
-
-
-
+}
 
 
 
