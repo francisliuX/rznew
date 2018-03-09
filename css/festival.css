@@ -24,7 +24,7 @@
 .main_inner .main_image .main_image_pic{
     /*position: relative;*/
     margin: 0 auto;
-    width: 1919px;
+    width: 1902px;
     /*height: 1000px;*/
     height: 100%;
 
@@ -142,15 +142,12 @@
 
 /*标题栏移动*/
 .move_box{
-    width: 248px;
-    height:70px;
-    /*border: 1px solid red;*/
-    border-bottom: 1px solid #f2aa0e;
     position: absolute;
-    background: #972421;
     top: 0;
     left: 0;
-
+    width: 248px;
+    height:70px;
+    background: #972421;
 }
 
 /*********************main_image*******************/
@@ -216,11 +213,50 @@
     margin: -525px auto;
 
 }
+/*****************************main_fixed**************************/
+.main_fixed{
+    /*width: 100%;*/
+    /*background: yellowgreen;*/
+}
+.main_fixed .main_fixed_inner{
+    position: fixed;
+    top: 30%;
+    width: 40px;
+    left: 15%;
+    height: 350px;
+    background: yellowgreen;
+}
+/**********************lift******************************/
 
-
-
-
-
+.fixed_lift .fixed_lift_item{
+    border-top:none;
+    display: list-item;
+    display: block;
+    box-shadow: 0 0 4px rgba(0,0,0,.2);
+    background: #918888;
+}
+.fixed_lift .fixed_lift_item:hover{
+    position: relative;
+    border-bottom:1px solid red;
+    margin-bottom:-1px;
+    border-color: #d70b1c;
+    background: red;
+}
+.fixed_lift .fixed_lift_item .lift_item{
+    display: block;
+    color: #fff;
+    overflow: hidden;
+    width:24px;
+    line-height: 14px;
+    text-align: center;
+    padding:7px 7px;
+    transition:color .1s;
+}
+.fixed_lift .fixed_lift_item .lift_item span{
+    font-size:12px;
+    color: #fff;
+    cursor: pointer;
+}
 
 
 
