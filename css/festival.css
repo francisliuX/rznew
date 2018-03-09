@@ -228,6 +228,37 @@
 }
 /**********************lift******************************/
 
+.fixed_lift .fixed_lift_item1{
+    border-top:none;
+    display: list-item;
+    display: block;
+    box-shadow: 0 0 4px rgba(0,0,0,.2);
+    background: #918888;
+}
+.fixed_lift .fixed_lift_item1:hover,.fixed_lift_item1.hover{
+    position: relative;
+    border-bottom:1px solid red;
+    margin-bottom:-1px;
+    border-color: #d70b1c;
+    background: red;
+}
+.fixed_lift .fixed_lift_item1 .lift_item{
+    display: block;
+    color: #fff;
+    overflow: hidden;
+    width:24px;
+    line-height: 14px;
+    text-align: center;
+    padding:7px 7px;
+    transition:color .1s;
+}
+.fixed_lift .fixed_lift_item1 .lift_item span{
+    font-size:12px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/******************其他的**********************/
 .fixed_lift .fixed_lift_item{
     border-top:none;
     display: list-item;
@@ -235,7 +266,7 @@
     box-shadow: 0 0 4px rgba(0,0,0,.2);
     background: #918888;
 }
-.fixed_lift .fixed_lift_item:hover{
+.fixed_lift .fixed_lift_item:hover,.fixed_lift_item.hover{
     position: relative;
     border-bottom:1px solid red;
     margin-bottom:-1px;
@@ -257,8 +288,6 @@
     color: #fff;
     cursor: pointer;
 }
-
-
 
 
 

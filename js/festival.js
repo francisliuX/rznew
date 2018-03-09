@@ -61,5 +61,21 @@ $(()=>{
     }
     fun("data/getfestivalA.php");
 
+//***********************lift****************************
+    $(function(){
+        $(window).scroll(()=>{
+            if($(document).scrollTop()>=800){
+                $(".main_fixed_inner").css({display:'block'});
+                // $(".fixed_lift_item").hover( {background: '#918888'});
+                $(".fixed_lift_item1").addClass('hover')
 
+            }else{
+                $(".main_fixed_inner").css({display:'none'});
+            }
+        })
+    })
+
+
+    var $lift=$("#")
+//******************尾********************
 })
