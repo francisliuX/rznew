@@ -90,7 +90,7 @@ $(()=>{
         for(var f of $floors){
             var $f=$(f);
             var offsetTop=$f.offset().top;
-            if(offsetTop<scrollTop+innerHeight/2){
+            if(offsetTop<scrollTop+innerHeight/5){
                 var i=$floors.index($f);
                 var $li=$(".fixed_lift_list").find(".fixed_lift_item:eq("+i+")");
                 //*********楼层颜色变化**************
@@ -106,7 +106,7 @@ $(()=>{
                 var i=$li.index();
                 var offsetTop=$floors.eq(i).offset().top;
                 $("html,body").stop(true).animate({
-                    scrollTop:offsetTop-100
+                    scrollTop:offsetTop-350
                 },500);
             }else{
                 $("html,body").stop(true).animate({

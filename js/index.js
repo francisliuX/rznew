@@ -66,17 +66,23 @@ $(()=>{
 
 //*********************slider*********************************
     const LIWIDTH=718,WAIT=3000,DURA=800;
-    var moved=0,timer=null, $ul=$(".f_slider_list"),$ids=$(".f_slider_indicator"),$bg=$(".m_content");
+    var moved=0,timer=null,
+        $ul=$(".f_slider_list"),
+        $ids=$(".f_slider_indicator"),
+        $bg=$(".m_content");
 
-    // console.log($ul)
+     // console.log($ul.children().length)
+    // console.log($ids)
+    // console.log($bg)
     $ul.css("width",LIWIDTH*4);
     $ids.children().first().addClass("hover");
-    function move(dir=1){
-        moved+=dir;
+
+    function move(){
+        moved++;
+
         /*****图片轮播动画****/
         $ul.animate({
             left:-LIWIDTH*moved,
-
         },DURA,()=>{
             for(var i=0;i<=moved;i++){
                 if(i==0){
@@ -91,11 +97,13 @@ $(()=>{
                     $bg.css({background:"#B8DFFC"});
                 }
             }
-            if(moved==4){
-                $ul.css("left",0);
-                moved=0;
 
+            if(moved==$ul.children().length-1){
+                moved=0;
+                $ul.css("left",0);
             }
+
+
             /*****图片上导航小圆点轮播动画****/
             $ids.children(":eq("+moved+")")
                 .addClass("hover")
