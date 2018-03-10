@@ -76,7 +76,7 @@ $(()=>{
 //     })
 
     //楼层显示
-    var $floors=$(".floor");
+    var $floors=$(".floorX");
     // var w=window.innerHeight;
     $(window).scroll(()=>{
         var scrollTop=$(window).scrollTop();
