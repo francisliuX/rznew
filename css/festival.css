@@ -254,8 +254,8 @@
     position: relative;
     border-bottom:1px solid red;
     margin-bottom:-1px;
-    border-color: #d70b1c;
-    background: red;
+    border-color: #760000;
+    background: #760000;
 }
 .fixed_lift .fixed_lift_item .lift_item{
     display: block;
@@ -287,7 +287,7 @@
     margin-top: -600px;
 }
 /**********************工具栏一*******************************/
-.j_toolbar_tabs{
+.rz_toolbar_tabs{
     position: fixed;
     z-index:999;
     right:0;
@@ -297,22 +297,22 @@
     background: transparent;
 
 }
-.j_toolbar_tabs .j_toolbar_tab{
+.rz_toolbar_tabs .rz_toolbar_tab{
     background: #766C6C;
     height:45px;
     border-radius:4px;
 }
-.j_toolbar_tabs>div:not(:first-child){
+.rz_toolbar_tabs>div:not(:first-child){
 
     margin-top:1px;
 }
 /*工具栏图标*/
-.j_toolbar_tabs .j_toolbar_tab .tab-ico{
+.rz_toolbar_tabs .rz_toolbar_tab .tab-ico{
     background: url("../img/festival_floorend/toolbars.png") no-repeat;
 
 }
 /*图标定位1*/
-.j_toolbar_tabs .j_toolbar_tab_jdvip .tab-ico{
+.rz_toolbar_tabs .rz_toolbar_tab_jdvip .tab-ico{
     position: absolute;
     width:288px;
     height:180px;
@@ -321,7 +321,7 @@
     background-position: -96px -182px;
 }
 /*图标定位2*/
-.j_toolbar_tabs .j_toolbar_tab_cart .tab-ico{
+.rz_toolbar_tabs .rz_toolbar_tab_cart .tab-ico{
     position: absolute;
     width:18px;
     height:18px;
@@ -329,7 +329,7 @@
     margin-left:15px;
     background-position: -57px -8px;
 }/*图标定位3*/
-.j_toolbar_tabs .j_toolbar_tab_follow .tab-ico{
+.rz_toolbar_tabs .rz_toolbar_tab_follow .tab-ico{
     position: absolute;
     width:18px;
     height:18px;
@@ -337,7 +337,7 @@
     margin-left:15px;
     background-position: -57px -57px;
 }/*图标定位4*/
-.j_toolbar_tabs .j_toolbar_tab_histoty .tab-ico{
+.rz_toolbar_tabs .rz_toolbar_tab_histoty .tab-ico{
     position: absolute;
     width:18px;
     height:18px;
@@ -345,7 +345,7 @@
     margin-left:15px;
     background-position: -57px -108px;
 }/*图标定位5*/
-.j_toolbar_tabs .j_toolbar_tab_message .tab-ico{
+.rz_toolbar_tabs .rz_toolbar_tab_message .tab-ico{
     position: absolute;
     width:18px;
     height:18px;
@@ -353,7 +353,7 @@
     margin-left:15px;
     background-position: -197px -156px;
 }/*图标定位6*/
-.j_toolbar_tabs .j_toolbar_tab_jimi .tab-ico{
+.rz_toolbar_tabs .rz_toolbar_tab_jimi .tab-ico{
     position: absolute;
     width:18px;
     height:18px;
@@ -361,7 +361,7 @@
     margin-left:15px;
     background-position: -57px -157px;
 }/*图标定位7*/
-.j_toolbar_tabs .j_toolbar_tab_top .tab-ico{
+.rz_toolbar_tabs .rz_toolbar_tab_top .tab-ico{
     position: absolute;
     width:18px;
     height:18px;
@@ -370,7 +370,7 @@
     background-position: -58px -260px;
 }
 /*图标定位8*/
-.j_toolbar_tabs .j_toolbar_tab_feedback .tab-ico{
+.rz_toolbar_tabs .rz_toolbar_tab_feedback .tab-ico{
     position: absolute;
     width:18px;
     height:18px;
@@ -379,7 +379,7 @@
     background-position: -57px -309px;
 }
 /*************************工具栏二*****************************/
-.j_toolbar_footer{
+.rz_toolbar_footer{
     position: fixed;
     z-index:999;
     right:0;
@@ -389,23 +389,23 @@
     background:transparent;
 }
 
-.j_toolbar_footer .j_trigeer{
+.rz_toolbar_footer .rz_trigeer{
     width:45px;
     height:45px;
     background: #766C6C;
     border-radius:4px
 }
-.j_toolbar_footer>div:last-child{
+.rz_toolbar_footer>div:last-child{
     margin-top:1px;
 
 }
-.j_toolbar_footer .j_trigeer em{
+.rz_toolbar_footer .rz_trigeer em{
 
     color: #fff;
     font-size:12px;
     text-align: center;
 }
-.j_toolbar_footer .j_trigeer em:hover{
+.rz_toolbar_footer .rz_trigeer em:hover{
     color: red;
 }
 
