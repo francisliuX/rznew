@@ -239,19 +239,53 @@
     height: 270px;
     margin: 0px auto;
     margin-top: 58px;
-    background: #000;
-    opacity: 0.6;
+    /*background: #000;*/
+    /*opacity: 0.6;*/
 }
 .main_image3 .main_image3_slider .slider_inner{
     width: 250px ;
     height: 260px;
     /*margin: 0px auto;*/
-    margin-left: 40px;
-    background: red;
+    margin-left: 30px;
+    /*background: red;*/
     float: left;
     /*opacity: 0.6;*/
 }
-
+#slider_inner{
+    width: 840px;
+    height: 260px;
+    margin-left: 60px;
+    overflow: hidden;
+}
+#slider_inner a{
+    display: block;
+    padding: 15px 43px;
+}
+#slider_inner a img{
+    width: 160px;
+    /*height: 160px;*/
+    display: block;
+    opacity: 0.8;
+}
+#slider_inner .slider_title{
+    height: 14px;
+    line-height: 14px;
+    text-align: center;
+    margin-top: 5px;
+}
+#slider_inner .slider_desc{
+    height: 12px;
+    line-height: 12px;
+    text-align: center;
+    margin: 5px 0;
+    font-size: 12px;
+    color:rgb(176,176,176);
+}
+#slider_inner .slider_price{
+    font-size: 14px;
+    text-align: center;
+    color: #ff6709;
+}
 /*****************************main_fixed**************************/
 .main_fixed{
     /*width: 100%;*/
@@ -263,7 +297,7 @@
     z-index: 100;
     top: 30%;
     width: 50px;
-    left: 15%;
+    left: 10%;
     height: auto;
     background: yellowgreen;
 }
@@ -327,7 +361,7 @@
     position: fixed;
     z-index:999;
     right:0;
-    bottom:315px;
+    bottom:110px;
     width:45px;
     height:236px;
     background: transparent;

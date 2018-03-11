@@ -21,7 +21,6 @@ $(()=>{
         }
     });
     //************************下拉内容******************************
-    // var a="data/getfestivalA.php";
     function fun(a){
         $.get(a).then(data => {
             "use strict";
@@ -30,8 +29,6 @@ $(()=>{
 
             for (var i = 0; i < data.length; i++) {
                 // console.log(data)
-                // console.log(data[0])
-                // console.log(data[i].pic)
                 html += ` <ul class="inner_list">
                     <li class="inner_item">
                         <a href="" target="_blank" class="inner_picture">
@@ -62,18 +59,6 @@ $(()=>{
     fun("data/getfestivalA.php");
 
 //***********************lift****************************
-//     $(function(){
-//         $(window).scroll(()=>{
-//             if($(document).scrollTop()>=800){
-//                 $(".main_fixed_inner").css({display:'block'});
-//                 // $(".fixed_lift_item").hover( {background: '#918888'});
-//                 $(".fixed_lift_item1").addClass('hover')
-//
-//             }else{
-//                 $(".main_fixed_inner").css({display:'none'});
-//             }
-//         })
-//     })
 
     //楼层显示
     var $floors=$(".floorX");
@@ -116,6 +101,10 @@ $(()=>{
         })
 
     })
-
+//******************热销手机*********************
+//     $.get().then(data=>{
+//         var html="";
+//         for()
+//     })
 //******************尾********************
 })
