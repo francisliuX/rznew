@@ -252,21 +252,26 @@
     /*opacity: 0.6;*/
 }
 /*热销手机*/
-.main_image3 .main_image3_price .slider_inner1 {
-    position: absolute;
-    width: 18px;
-    height: 260px;
+.main_image3 .main_image3_price{
+    position: relative;
+    width: 60px;
+    height: 128px;
+    top: 83px;
+    margin: 4px auto;
+    padding-right: 845px;
     font-size: 34px;
-    top: 86px;
-    left: 180px;
 }
 /*image_slider轮播*/
 .main_image3 #image_demo{
     width: 900px;
     height: 260px;
+    position: relative;
     overflow: hidden;
-    margin-top: 58px;
-    margin-left:230px ;
+    /*margin: 0 auto;*/
+    top: -80px;
+    left: -10px;
+    /*margin-top: 58px;*/
+    /*margin-left:545px ;*/
 
 }
 .slider_inner_id{

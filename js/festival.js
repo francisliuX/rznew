@@ -104,9 +104,23 @@ $(()=>{
 //******************热销手机*********************
     $.get("data/getfestivalA.php").then(data=>{
         var html="";
-        console.log(data);
-    })
-    $(()=>{
+
+        // console.log(data);
+        for (var i = 0; i < data.length; i++) {
+            // console.log(data.length)
+        html+=`
+                <li class="slider_inner">
+                <a href=""><img src="${data[i].pic}" alt=""></a>
+                <p class="slider_title">${data[i].title}</p>
+                <p class="slider_desc">${data[i].details}</p>
+            <p class="slider_price">${data[i].price}</p>
+                </li>
+                
+                `
+        }
+        $(".slider_inner_id").html(html);
+    // })
+    // $(()=>{
         var speed=20;
         // var $tab=$("#image_demo");
         // var $tab1=$("#image_demo1");
@@ -119,7 +133,7 @@ $(()=>{
         var tab1 = document.getElementById("image_demo1");
         var tab2 = document.getElementById("image_demo2");
             tab2.innerHTML = tab1.innerHTML;
-            console.log(tab2)
+            // console.log(tab2)
         function Marquee() {
             if (tab2.offsetWidth - tab.scrollLeft <= 0)
                 tab.scrollLeft -= tab1.offsetWidth
