@@ -102,9 +102,62 @@ $(()=>{
 
     })
 //******************热销手机*********************
-//     $.get().then(data=>{
-//         var html="";
-//         for()
-//     })
+    $.get("data/getfestivalA.php").then(data=>{
+        var html="";
+
+        // console.log(data);
+        for (var i = 0; i < data.length; i++) {
+            // console.log(data.length)
+        html+=`
+                <li class="slider_inner">
+                <a href=""><img src="${data[i].pic}" alt=""></a>
+                <p class="slider_title">${data[i].title}</p>
+                <p class="slider_desc">${data[i].details}</p>
+            <p class="slider_price">${data[i].price}</p>
+                </li>
+                
+                `
+        }
+        $(".slider_inner_id").html(html);
+    // })
+    // $(()=>{
+        var speed=20;
+        // var $tab=$("#image_demo");
+        // var $tab1=$("#image_demo1");
+        // var $tab2=$("#image_demo2");
+        // var inner=$tab1.html()
+        // $tab2.html(inner)
+
+
+        var tab=document.getElementById("image_demo");
+        var tab1 = document.getElementById("image_demo1");
+        var tab2 = document.getElementById("image_demo2");
+            tab2.innerHTML = tab1.innerHTML;
+            // console.log(tab2)
+        function Marquee() {
+            if (tab2.offsetWidth - tab.scrollLeft <= 0)
+                tab.scrollLeft -= tab1.offsetWidth
+            else {
+                tab.scrollLeft++;
+            }
+            // console.log(tab.scrollLeft)
+        }
+        Marquee();
+        var MyMar = setInterval(Marquee, speed);
+
+        $("#image_demo").hover(
+            ()=>{clearInterval(MyMar)},
+            ()=>{MyMar = setInterval(Marquee, speed)}
+        )
+
+
+        // tab.onmouseover = function () {
+        //     clearInterval(MyMar)
+        // };
+        // tab.onmouseout = function () {
+        //     MyMar = setInterval(Marquee, speed)
+        // };
+
+    })
 //******************尾********************
 })
