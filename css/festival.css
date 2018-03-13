@@ -216,6 +216,12 @@
 
     top:111px;
 }
+.mian_image_all{
+    width: 1000px;
+    height: 2400px;
+    margin: 0 auto;
+    background:url("../img/festiavl_floor/lestival_floornew.png") center 0 no-repeat;
+}
 .main_image3 .main_image3_inner{
     position: relative;
     /*top: 235px;*/
@@ -224,12 +230,12 @@
     margin: 0px auto;
 
 }
-/*****************main_image3_slider************************/
+/**********main_image3_slider********热  销  手  机******************/
 .main_image3 .main_image3_slider{
-    position: absolute;
+    position: relative;
     width: 100% ;
     height: 700px;
-    top: 0px;
+
 }
 
 .main_image3 .main_image3_slider .image3_slider_inner{
@@ -251,14 +257,15 @@
     float: left;
     /*opacity: 0.6;*/
 }
-/*热销手机*/
+/********************热  销  手  机  一  楼**************************/
 .main_image3 .main_image3_price{
     position: relative;
     width: 60px;
     height: 128px;
     top: 83px;
-    margin: 4px auto;
-    padding-right: 845px;
+    left: 37px;
+    /*margin: 4px auto;*/
+    /*padding-right: 845px;*/
     font-size: 34px;
 }
 /*image_slider轮播*/
@@ -268,8 +275,8 @@
     position: relative;
     overflow: hidden;
     /*margin: 0 auto;*/
-    top: -80px;
-    left: -10px;
+    top: -60px;
+    left: 28px;
     /*margin-top: 58px;*/
     /*margin-left:545px ;*/
 
@@ -309,7 +316,79 @@
     text-align: center;
     color: #ff6709;
 }
-/*****************************main_fixed**************************/
+/********************热  销  手  机  二  楼*************************/
+.main_image3_boxpic{
+    margin-left: 20px;
+}
+.main_image3_boxpic .image3_box_pic{
+    width: 310px;
+    height: 260px;
+    float: left;
+    /*border: 1px solid red;*/
+    margin-left: 10px;
+    position: relative;
+}
+.main_image3_boxpic .image3_box_pic .box_pin_aimg{
+    width: 310px;
+}
+.main_image3_boxpic .box_pic_logo{
+    position: absolute;
+    left: 50%;
+    top: 160px;
+    width: 80px;
+    height: 80px;
+    -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    border-radius: 80px;
+    margin-left: -42px;
+    margin-top: -42px;
+    text-align: center;
+    background: #fff;
+    -webkit-box-shadow: 1px 2px 6px #cccccc ;
+    -moz-box-shadow: 1px 2px 6px #cccccc ;
+    box-shadow: 1px 2px 6px #cccccc ;
+
+}
+.main_image3_boxpic .box_pic_img{
+    margin-top: 10px;
+    width: 50px;
+    height: 61px;
+}
+.image3_box_pic .box_pic_tit{
+    padding: 40px  0 0;
+    height: 20px;
+}
+.image3_box_pic .box_pic_tit span{
+    display: block;
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+.image3_box_pic .box_pic_2{
+    width: 200px;
+    height: 30px;
+    position: absolute;
+    left: 76px;
+    top: 233px;
+    z-index: 8;
+}
+.image3_box_pic .box_pic_2 a{
+    display: block;
+    float: left;
+    width: 73px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 12px;
+    font-size: 12px;
+    color: #666;
+    background: #e6e6e6;
+    /*opacity: 0.6;*/
+    border: 1px solid #e6e6e6;
+}
+/****************************电脑配件******************************/
+/*****************************main_fixed导航固定条**************************/
 .main_fixed{
     /*width: 100%;*/
     /*background: yellowgreen;*/
@@ -366,20 +445,22 @@
     cursor: pointer;
 }
 
+
 /*******************main_image_floorA*************************/
 .main_image_floorA{
     position: relative;
     width: 100%;
     height: 830px;
-    top: 100px;
+    /*top: 100px;*/
 }
+/*******************main_image_floorB*************************/
 .main_image_floorB{
     position:relative;
     width: 100%;
     height: 888px;
-    top: 100px;
+    /*top: 100px;*/
 }
-/**********************工具栏一*******************************/
+/**********************   工  具   栏   一***********************************/
 .rz_toolbar_tabs{
     position: fixed;
     z-index:999;
