@@ -427,24 +427,57 @@
     transition: all 0.2s linear;
 }
 .main_floorA_border1 .floorA_box_inner h2{
-    font-size: 16px;
+    font-size: 18px;
     padding: 0 10px 18px;
     font-weight: 400;
     text-align: center;
 }
 
 .main_floorA_border1  .floorA_box_list .box_list_name{
-    width: 256px;
+    width: 232px;
     height: 25px;
     line-height: 25px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     text-align: center;
-    margin: 0 20px 5px;
+    margin: 0 0 5px;
     color: #333;
 }
+.main_floorA_border1  .floorA_box_list .box_list_tit{
+    width: 206px;
+    height: 40px;
+    line-height: 20px;
+    font-size: 12px;
+    text-align: center;
+    margin: 0 10px 10px;
+    word-break:break-all;
+    color: #b0b0b0;
+}
+
+.main_floorA_border1  .floorA_box_list .box_list_pic{
+    height: 21px;
+    text-align: center;
+    margin: 0;
+}
+.main_floorA_border1  .floorA_box_list .box_list_img{
+    display: block;
+    width: 216px;
+    height: 144px;
+    margin: 0 auto  ;
+}
+.main_floorA_border1  .floorA_box_list .box_list_img img{
+    display: block;
+    margin: 0 auto;
+    width: 145px;
+}
 .main_floorA_border1 .floorA_box_inner .floorA_box_carousel{
-    height: 249px;
+    height: 245px;
+    position: relative;
+    overflow: hidden;
+}
+/**********cpu************/
+.main_floorA_border1 .floorA_box_inner .floorA_box_cpu{
+    height: 245px;
     position: relative;
     overflow: hidden;
 }
@@ -478,13 +511,25 @@
 }
 /*****小轮播********/
 .main_floorA_border1 .floorA_box_carousel .floorA_box_item{
-    width: 1480px;
-    height: 340px;
+    width: 1150px;
+    height: 245px;
     position: absolute;
 }
 .main_floorA_border1 .floorA_box_carousel .floorA_box_list{
     width: 230px;
-    height: 340px;
+    height: 245px;
+    float: left;
+}
+/************小轮播cpu*************/
+
+.main_floorA_border1 .floorA_box_cpu .floorA_box_item{
+    width: 1150px;
+    height: 245px;
+    position: absolute;
+}
+.main_floorA_border1 .floorA_box_cpu .floorA_box_list{
+    width: 230px;
+    height: 245px;
     float: left;
 }
 /*****************************main_fixed导航固定条**************************/
@@ -681,12 +726,9 @@
 .rz_toolbar_footer .rz_trigeer em:hover{
     color: red;
 }
-
-
-
-
-
-
+/**/
+.pagesactive{border-color: #ff6700;background: #fff;}
+/**/
 
 
 

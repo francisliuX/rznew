@@ -159,5 +159,73 @@ $(()=>{
         // };
 
     })
+
 //******************尾********************
+});
+$(()=>{
+    //*******************小轮播********************
+    var //$item=$(".floorA_box_item"),
+    //     $page=$(".floorA_box_page"),
+    //     data=$(".floorA_box_item>li"),
+        $item=$(".floorA_box_cpu .floorA_box_item"),
+        $page=$(".floorA_box_cpu .floorA_box_page"),
+        data=$(".floorA_box_cpu .floorA_box_item>li"),
+
+        moved=0,LIWIDTH=230,canmove=true,timer=null,WAIT=3000;
+
+    $page.children().first().addClass("pagesactive");
+    console.log(data.length);
+    function automove(){
+        if(canmove){
+            if(moved==data.length-1){
+                moved=0;
+                $item.css("left",0)
+            }
+            timer=setTimeout(()=>{
+                move(1,automove);
+            },WAIT);
+        }
+    }
+    automove();
+//***********轮播效果****************
+    function move(dir,callback){
+        moved+=dir;
+        if(moved<data.length-1){
+            $page.children(":eq("+moved+")")
+                .addClass("pagesactive")
+                .siblings().removeClass("pagesactive")
+        }else{
+            $page.children(":eq("+0+")")
+                .addClass("pagesactive")
+                .siblings().removeClass("pagesactive")
+        }
+        $item.animate({
+            left:-LIWIDTH*moved
+        },1000,callback)
+    }
+//*************前后切换******************
+    $(".small_slide_right").click((e)=>{
+        e.preventDefault;
+        if(moved==data.length-1){
+            moved=0;
+            $item.css("left",0)
+        }
+        move(1);
+    });
+    $(".small_slide_left").click((e)=>{
+        e.preventDefault;
+        if(moved==0){
+            moved=data.length-1;
+            $item.css("left",LIWIDTH*moved)
+        }
+        move(-1);
+    });
+
+
+    $(".floorA_box_item").hover(
+        ()=>{clearTimeout(timer);timer=null;},
+        ()=>{timer=setTimeout(()=>{move(1,automove);},WAIT);}
+    )
+
+//尾*******************
 })
