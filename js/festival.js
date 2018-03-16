@@ -173,10 +173,10 @@ $(()=>{
 
         moved=0,LIWIDTH=230,canmove=true,timer=null,WAIT=3000;
 
-    $page.children().first().addClass("pagesactive");
+    // $page.children().first().addClass("pagesactive");
     console.log(data.length);
     function automove(){
-        if(canmove){
+            if(canmove){
             if(moved==data.length-1){
                 moved=0;
                 $item.css("left",0)

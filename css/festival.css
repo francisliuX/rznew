@@ -410,7 +410,10 @@
     margin-left: 15px;
 }
 /******一楼轮播box*******/
-
+.main_image_floorA .main_floorA_border1{
+    width: 1000px;
+    height: 330px;
+}
 .main_image_floorA .main_floorA_border1 .floorA_box_inner{
     width: 230px;
     height: 290px;
@@ -531,6 +534,88 @@
     width: 230px;
     height: 245px;
     float: left;
+}
+/*****************main_floorA_border2******************/
+#f4 .main_image_floorA .main_floorA_border2{
+    top: 45px;
+    color: orangered;
+}
+/***********main_floorA_border3*************/
+/************第二层第二区域********************/
+.main_floorA_border3{
+    position: relative;
+    width: 1000px;
+    height: 300px;
+    top: 55px;
+}
+/*.main_border3_hover .*/
+.main_border3_hover .main_border3_item{
+    width: 235px;
+    height: 300px;
+    margin-right: 5px;
+    /*border: 1px solid   red;*/
+    float: left;
+}
+.main_border3_hover .main_border3_pic{
+    /*width: 990px;*/
+    height: 326px;
+    margin-left: 25px;
+}
+.main_border3_hover .main_border3_list{
+    overflow: hidden;
+}
+.main_border3_hover .border3_item_img img{
+    margin: 0 auto;
+    width: 147px;
+    display: block;
+    margin-top: 40px;
+}
+.main_border3_hover .border3_item_tit{
+    margin: 0 10px 2px;
+}
+.main_border3_hover .border3_item_tit a{
+    color: #333;
+    display: block;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 16px;
+}
+.main_border3_hover .border3_item_desc {
+    margin: 0 10px 10px;
+    height: 18px;
+    font-size: 12px;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    _zoom: 1;
+    color: #999;
+}
+.main_border3_hover .border3_item_price{
+    margin: 0 10px 14px;
+    color: #ff6700;
+    text-align: center;
+    font-size: 18px;
+}
+
+.main_border3_hover .main_border3_list li{
+    transition:All 0.4s ease-in-out;
+    -webkit-transition:All 0.4s ease-in-out;
+    -moz-transition:All 0.4s ease-in-out;
+    -o-transition:All 0.4s ease-in-out;
+
+}
+.main_border3_hover .main_border3_list li:hover {
+    transform:translate(0,-10px);
+    -webkit-transform:translate(0,-10px);
+    -moz-transform:translate(0,-10px);
+    -o-transform:translate(0,-10px);
+    -ms-transform:translate(0,-10px);
+    -webkit-box-shadow:0px 5px 15px #D99D57;
+    -moz-box-shadow:0px 5px 15px #D99D57;
+    box-shadow:0px 5px 15px #D99D57;
 }
 /*****************************main_fixed导航固定条**************************/
 .main_fixed{
@@ -729,7 +814,6 @@
 /**/
 .pagesactive{border-color: #ff6700;background: #fff;}
 /**/
-
 
 
 
