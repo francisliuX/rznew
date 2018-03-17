@@ -108,15 +108,12 @@ $(()=>{
         // console.log(data);
         for (var i = 0; i < data.length; i++) {
             // console.log(data.length)
-        html+=`
-                <li class="slider_inner">
+        html+=`<li class="slider_inner">
                 <a href=""><img src="${data[i].pic}" alt=""></a>
                 <p class="slider_title">${data[i].title}</p>
                 <p class="slider_desc">${data[i].details}</p>
             <p class="slider_price">${data[i].price}</p>
-                </li>
-                
-                `
+                </li>`
         }
         $(".slider_inner_id").html(html);
     // })
@@ -162,70 +159,145 @@ $(()=>{
 
 //******************尾********************
 });
+
 $(()=>{
     //*******************小轮播********************
-    var //$item=$(".floorA_box_item"),
-    //     $page=$(".floorA_box_page"),
-    //     data=$(".floorA_box_item>li"),
-        $item=$(".floorA_box_cpu .floorA_box_item"),
-        $page=$(".floorA_box_cpu .floorA_box_page"),
-        data=$(".floorA_box_cpu .floorA_box_item>li"),
+    function cpu(change){
+        var $item=$(change+" .floorA_box_cpu .floorA_box_item"),
+            $page=$(change+" .floorA_box_cpu .floorA_box_page"),
+            data=$(change+"  .floorA_box_cpu .floorA_box_item>li");
+        const WAIT=3000,LIWIDTH=230,DURA=500;
+        var moved=0,timer=null;
+        // $page.children().first().addClass("pagesactive");
+        console.log(data.length);
+        function move(dir=1){
+            moved+=dir;
+            $item.animate({
+                left:-LIWIDTH*moved
+            },DURA,()=>{
+                if(moved==data.length-1){
+                    $item.css("left",0);
+                    moved=0;
+                }
+                // $page.children(":eq("+moved+")")
+                //     .addClass("pagesactive")
+                //     .siblings().removeClass("pagesactive")
+            })
+        }
+        var timer=setInterval(move,WAIT);
 
-        moved=0,LIWIDTH=230,canmove=true,timer=null,WAIT=3000;
+        $(change+" .floorA_box_item").hover(
+            ()=>{clearInterval(timer);timer=null;},
+            ()=>{timer=setInterval(move,WAIT);},
+        );
+        //*************前后切换******************
+        $(change+" .small_slide_right").click((e)=>{
+            console.log(1);
 
-    // $page.children().first().addClass("pagesactive");
-    console.log(data.length);
-    function automove(){
-            if(canmove){
-            if(moved==data.length-1){
-                moved=0;
-                $item.css("left",0)
+            e.preventDefault;
+            if(!$item.is(":animated"))
+                move();
+        });
+        $(change+" .small_slide_left").click((e)=>{
+            console.log(2);
+            e.preventDefault;
+            if(!$item.is(":animated")){
+                if(moved==0){
+                    $item.css("left",-LIWIDTH*data.length-1);
+                    moved=data.length-1;
+                    console.log(moved)
+                }
+                move(-1)
             }
-            timer=setTimeout(()=>{
-                move(1,automove);
-            },WAIT);
-        }
+        });
+
     }
-    automove();
-//***********轮播效果****************
-    function move(dir,callback){
-        moved+=dir;
-        if(moved<data.length-1){
-            $page.children(":eq("+moved+")")
-                .addClass("pagesactive")
-                .siblings().removeClass("pagesactive")
-        }else{
-            $page.children(":eq("+0+")")
-                .addClass("pagesactive")
-                .siblings().removeClass("pagesactive")
-        }
-        $item.animate({
-            left:-LIWIDTH*moved
-        },1000,callback)
-    }
-//*************前后切换******************
-    $(".small_slide_right").click((e)=>{
-        e.preventDefault;
-        if(moved==data.length-1){
-            moved=0;
-            $item.css("left",0)
-        }
-        move(1);
-    });
-    $(".small_slide_left").click((e)=>{
-        e.preventDefault;
-        if(moved==0){
-            moved=data.length-1;
-            $item.css("left",LIWIDTH*moved)
-        }
-        move(-1);
-    });
-
-
-    $(".floorA_box_item").hover(
-        ()=>{clearTimeout(timer);timer=null;},
-        ()=>{timer=setTimeout(()=>{move(1,automove);},WAIT);}
-    )
-
-//尾*******************
+    cpu(".A");
+    cpu(".C");
+    cpu(".D");
+    cpu(".B");
+    console.log(1)
 })
+// console.log(2)
+$(()=>{
+    console.log(2)
+    var box=$(".image_box_sfq"),
+         ul=box.children();
+         lis=ul.children();
+    // console.log(box)
+    // console.log(ul)
+    // console.log(lis)
+    for (var i=0;i<lis.length;i++){
+        lis[i].style.backgroundImage="url(img/image_floorB/a"+(i+1)+".png";
+        lis[i].onmouseover=function(){
+            for(var j=0;j<lis.length;j++){
+                animate(lis[j],{"width":100});
+            }
+            animate(this,{"width":550});
+        };
+    }
+    box.onmouseout=function(){
+        console.log(11)
+        for(var i=0;i<lis.length;i++){
+            animate(lis[i],{"width":190});
+        }
+    };
+    function animate(obj,json){
+        clearInterval(obj.timer);
+        obj.timer=setInterval(function(){
+            var flag=true;
+            for (var k in json){
+                var leader=parseInt(getStyle(obj,k))||0;
+                var target=json[k];
+                var step=(target-leader)/10;
+                step=step>0?Math.ceil(step):Math.floor(step);
+                leader=leader+step;
+                obj.style[k]=leader+"px";
+                if(leader!=target){
+                    flag=false;
+                }
+            }
+            if(flag){
+                clearInterval(obj.timer);
+            }
+        },15);
+    }
+    function getStyle(obj,attr){
+        if(window.getComputedStyle){
+            return window.getComputedStyle(obj,null)[attr];
+        }else{
+            return obj.currentStyle[attr];
+        }
+    }
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
