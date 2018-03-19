@@ -169,7 +169,7 @@ $(()=>{
         const WAIT=3000,LIWIDTH=230,DURA=500;
         var moved=0,timer=null;
         // $page.children().first().addClass("pagesactive");
-        console.log(data.length);
+        // console.log(data.length);
         function move(dir=1){
             moved+=dir;
             $item.animate({
@@ -184,11 +184,11 @@ $(()=>{
                 //     .siblings().removeClass("pagesactive")
             })
         }
-        var timer=setInterval(move,WAIT);
+        timer=setInterval(move,WAIT);
 
         $(change+" .floorA_box_item").hover(
             ()=>{clearInterval(timer);timer=null;},
-            ()=>{timer=setInterval(move,WAIT);},
+            ()=>{timer=setInterval(move,WAIT);}
         );
         //*************前后切换******************
         $(change+" .small_slide_right").click((e)=>{
@@ -205,7 +205,7 @@ $(()=>{
                 if(moved==0){
                     $item.css("left",-LIWIDTH*data.length-1);
                     moved=data.length-1;
-                    console.log(moved)
+                    // console.log(moved)
                 }
                 move(-1)
             }
@@ -216,19 +216,25 @@ $(()=>{
     cpu(".C");
     cpu(".D");
     cpu(".B");
-    console.log(1)
+    // console.log(1)
 })
 // console.log(2)
 $(()=>{
-    console.log(2)
+    // console.log(2)
     var box=$(".image_box_sfq"),
-         ul=box.children();
+         ul=box.children(),
          lis=ul.children();
+
     // console.log(box)
     // console.log(ul)
     // console.log(lis)
     for (var i=0;i<lis.length;i++){
-        lis[i].style.backgroundImage="url(img/image_floorB/a"+(i+1)+".png";
+        var li=lis[i].children[0]
+        // console.log(li)
+
+        // lis[i].style.backgroundImage="url(img/image_floorB/a"+(i+1)+".png)";
+        li.style.backgroundImage="url(img/image_floorB/b"+(i+1)+".jpg)";
+
         lis[i].onmouseover=function(){
             for(var j=0;j<lis.length;j++){
                 animate(lis[j],{"width":100});
@@ -236,12 +242,13 @@ $(()=>{
             animate(this,{"width":550});
         };
     }
-    box.onmouseout=function(){
-        console.log(11)
+    // console.log(12)
+    box.mouseout(function(){
         for(var i=0;i<lis.length;i++){
             animate(lis[i],{"width":190});
         }
-    };
+    });
+    // console.log(13)
     function animate(obj,json){
         clearInterval(obj.timer);
         obj.timer=setInterval(function(){
