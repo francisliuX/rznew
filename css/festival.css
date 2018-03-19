@@ -535,6 +535,14 @@
     height: 245px;
     float: left;
 }
+/*******************main_image_floorA*************************/
+.main_image_floorA{
+    position: relative;
+    width: 100%;
+    height: 830px;
+    /*top: 100px;*/
+}
+
 /*****************main_floorA_border2******************/
 #f4 .main_image_floorA .main_floorA_border2{
     top: 45px;
@@ -617,6 +625,35 @@
     -moz-box-shadow:0px 5px 15px #D99D57;
     box-shadow:0px 5px 15px #D99D57;
 }
+/*******************第三楼main_image_floorB*************************/
+.main_image_floorB{
+    position:relative;
+    width: 100%;
+    height: 888px;
+    /*top: 100px;*/
+}
+
+/**************第三楼的一层********************/
+.main_image_floorB .image_box_sfq{
+    position: relative;
+    width: 949px;
+    height: 300px;
+    top: 96px;
+    margin: 0px auto;
+    border: 1px solid red;
+    overflow: hidden;
+}
+.main_image_floorB .image_box_list{
+    width: 1000px;
+    overflow: hidden;
+}
+.main_image_floorB .image_box_list li{
+    width: 190px;
+    height: 300px;
+    float: left;
+    border: 1px solid hotpink;
+
+}
 /*****************************main_fixed导航固定条**************************/
 .main_fixed{
     /*width: 100%;*/
@@ -632,6 +669,11 @@
     height: auto;
     background: yellowgreen;
 }
+
+
+
+
+
 /**********************lift******************************/
 
 .fixed_lift .fixed_lift_item1:hover,.fixed_lift_item1.hover{
@@ -675,20 +717,7 @@
 }
 
 
-/*******************main_image_floorA*************************/
-.main_image_floorA{
-    position: relative;
-    width: 100%;
-    height: 830px;
-    /*top: 100px;*/
-}
-/*******************main_image_floorB*************************/
-.main_image_floorB{
-    position:relative;
-    width: 100%;
-    height: 888px;
-    /*top: 100px;*/
-}
+
 /**********************   工  具   栏   一***********************************/
 .rz_toolbar_tabs{
     position: fixed;
