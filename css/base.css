@@ -27,7 +27,7 @@ ul, li, p, h1, h2, h3, h4, h5, h6, dl, dt, dd {
     border: none;
     list-style: none;
 }
-input {
+input, img{
     border: none;
 }
 .lf {
@@ -38,4 +38,8 @@ input {
 }
 .clear {
     clear: both;
+}
+/*html5*/
+article,aside,dialog,footer,header,section,footer,nav,figure,menu{
+    display:block
 }

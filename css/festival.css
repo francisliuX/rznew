@@ -23,7 +23,7 @@
 }
 .main_image .main_image_pic img{
     width: 100%;
-    margin-top: -4px;
+    margin-top: -5px;
 }
 .main_inner .main_image .main_image_pic{
     /*position: relative;*/
@@ -233,7 +233,7 @@
     overflow: hidden;
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
-    -ms-transition: all 1s;
+    /*-ms-transition: all 1s;*/
     -o-transition: all 1s;
     transition: all 1s;
 }

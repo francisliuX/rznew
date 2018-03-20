@@ -1,15 +1,17 @@
 
 /*************scroll***************/
-$(function(){
-    $(window).scroll(function(){
-        if($(document).scrollTop()>730){
-            $(".floor_con").css({position:'fixed',top:'0px'});
-        }else{
+
+    $(function(){
+        $(window).scroll(function(){
+            if($(document).scrollTop()>730){
+                $(".floor_con").css({position:'fixed',top:'0px'});
+            }else{
 
                 $(".floor_con").css({position:'absolute',top:'730px'});
-        }
+            }
+        })
     })
-})
+
 //************************左侧栏下拉************************************
 
 //banner左侧内容栏
@@ -74,7 +76,11 @@ $(()=>{
      // console.log($ul.children().length)
     // console.log($ids)
     // console.log($bg)
-    $ul.css("width",LIWIDTH*4);
+    $ul.css("width",LIWIDTH*5);
+    // var s=$ids.children()[0];
+    // console.log(s)
+    // s.classList.add("hover");
+
     $ids.children().first().addClass("hover");
 
     function move(){
