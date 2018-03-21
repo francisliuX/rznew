@@ -137,6 +137,7 @@
     z-index: 999;
 
 }
+
 /***************左边栏左边触发栏*************************/
 .f_col1 .cate_menu{
     width:192px;
@@ -170,6 +171,7 @@
     display: block;
 }
 .f_col1 .cate_pop.active .cate_part{
+    display:block;
     position:absolute;
     width:1000px;
     z-index:997;
@@ -851,7 +853,7 @@
     float: left;
     padding-left: 85px;
     padding-top: 8px;
-    background: url(../img/sj_sfc.jpg) 28px 8px scroll no-repeat;
+    /*background: url(../img/sj_sfc.jpg) 28px 8px scroll no-repeat;*/
     line-height: 16px;
 }
 

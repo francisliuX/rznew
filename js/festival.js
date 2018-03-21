@@ -1,4 +1,6 @@
 $(()=>{
+
+
  //**********************进入内容栏来回切换*****************************
     var LIWIDTH=248;
     $(".main_image_tit").mouseover(e=>{
@@ -82,8 +84,9 @@ $(()=>{
                 $li.addClass("hover")
                     .siblings().removeClass("hover");
             }
-        }
-    //************点击电梯跳转到具体楼层*********************
+
+        };
+//************点击电梯跳转到具体楼层*********************
         $(".fixed_lift_list").on("click",".fixed_lift_item",function(){
             var $li=$(this);
             if(!$li.is(":last-child")){
@@ -216,18 +219,12 @@ $(()=>{
     cpu(".C");
     cpu(".D");
     cpu(".B");
-    // console.log(1)
 })
-// console.log(2)
 $(()=>{
-    // console.log(2)
+
     var box=$(".image_box_sfq"),
          ul=box.children(),
          lis=ul.children();
-
-    // console.log(box)
-    // console.log(ul)
-    // console.log(lis)
     for (var i=0;i<lis.length;i++){
         var li=lis[i].children[0]
         // console.log(li)
