@@ -261,13 +261,12 @@
 .main_image3{
     position: relative;
     width: 100%;
-    height: 700px;
-    /*margin: -36px auto;*/
-
+    /*height: 700px;*/
+    overflow: hidden;
     top:111px;
 }
 .mian_image_all{
-    width: 1000px;
+    width: 1088px;
     height: 2400px;
     margin: 0 auto;
     background:url("../img/festiavl_floor/lestival_floornew.png") center 0 no-repeat;
