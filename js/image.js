@@ -13,7 +13,7 @@ function DrawImage(ImgD, iwidth, iheight) {
 				ImgD.width = image.width;
 				ImgD.height = image.height
 			}
-			ImgD.alt = image.width + "脳" + image.height
+			ImgD.alt = image.width + "tu" + image.height
 		} else {
 			if (image.height > iheight) {
 				ImgD.height = iheight;
@@ -22,7 +22,7 @@ function DrawImage(ImgD, iwidth, iheight) {
 				ImgD.width = image.width;
 				ImgD.height = image.height
 			}
-			ImgD.alt = image.width + "脳" + image.height
+			ImgD.alt = image.width + "tu" + image.height
 		}
 	}
 }
